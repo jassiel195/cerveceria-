@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervecería</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="imagenes/jack.jpg" type="image/jpeg"> 
+</head>
+<body>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 20px; justify-content: center; padding: 0">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+        </ul>
+    </nav>
+
+    <section class="cuadro emprendimiento cervecero">
+        <a href="menu.html">
+            <img class="logo-emprendimiento" src="imagenes/jack.jpg" alt="Logo de la cervecería" style="width:200px; height:auto;"> 
+        </a>
+        <div class="texto-decorativo">
+            <h5>Bienvenido a nuestra cervecería,</h5>
+            <h5>disfruta y descubre nuestro ambiente único</h5>
+        </div>
+    </section>
+
+    <script>
+    (function() {
+      var nombre = prompt('Por favor, ingresa tu nombre:');
+      var apellido = prompt('Por favor, ingresa tu apellido:');
+
+      if (nombre === null) nombre = '';
+      if (apellido === null) apellido = '';
+
+      nombre = nombre.trim();
+      apellido = apellido.trim();
+
+      var nombreCompleto = (nombre || apellido) ? (nombre + (nombre && apellido ? ' ' : '') + apellido) : '';
+
+      if (nombreCompleto) {
+        alert('Nombre completo: ' + nombreCompleto);
+      } else {
+        alert('No se ingresó nombre ni apellido.');
+      }
+    })();
+    </script>
+</body>
+</html>

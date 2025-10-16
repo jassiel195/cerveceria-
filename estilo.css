@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    display: grid
+}
+.texto-decorativo {
+    font-size: 1.5rem;
+    color: #ff9900;
+    font-family: 'Segoe Script', cursive, Arial;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px
+}
+
+/* Centrar el título h5 dentro del bloque decorativo */
+.texto-decorativo h5 {
+    text-align: center;
+    margin: 0;
+    line-height: 1.05;
+    display: block;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Asegurar que el enlace 'Inicio' sea blanco */
+nav ul li a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/*  */
+.logo-emprendimiento {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 24px #ff9900a0;
+    display: block;
+    margin: 30px auto 25px auto;
+    border: 6px solid #ff9900;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    background: #222;
+}
+
+.logo-emprendimiento:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 8px 32px #fff;
+    border-color: #fff;
+}
+/* Fondo trasero en la cabecera: imagen de la bodega */
+.hero-top {
+    /* Atención: el archivo en la carpeta tiene un espacio en su nombre 'bodega .jpg' */
+    background-image: url('../imagenes/bodega .jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0 40px 0;
+}
+
+/* Hacer el logo claramente visible sobre el fondo */
+.logo-emprendimiento {
+    background: transparent; /* quitar fondo sólido */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+}
+
+.cajas-latas .lata img {
+    width: 350px; 
+    height: 340px; 
+    max-width: none;
+    object-fit: contain;
+    display: inline-block;
+}
+
+
+.lata--small img  { width: 120px; height: 120px; }
+.lata--medium img { width: 124px; height: 124px; }
+.lata--large img  { width: 132px; height: 132px; }
+
+/* clase específica si se quiere (ejemplo) */
+.american img {
+    width: 100px;
+}
+
